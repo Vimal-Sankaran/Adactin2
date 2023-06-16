@@ -66,6 +66,7 @@ public class BaseClass {
      * To be clickable
      * Robot class enter tab and backspace
      */
+
     public static WebDriver driver;
     public static WebDriver setChromeBrowser() {
         System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver.exe");
