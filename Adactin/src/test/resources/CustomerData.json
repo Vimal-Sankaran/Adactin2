@@ -1,9 +1,8 @@
 [
-{
+  {
   "id": "InvalidDetails",
   "username": "stan",
   "password": "agda"
-
   },
   {
     "id": "ValidDetails",
