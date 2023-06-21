@@ -18,6 +18,9 @@ public class LoginPageSteps extends BaseClass {
 
     public static EntityHelper entityHelper = new EntityHelper();
 
+    /**
+     * To navigate to the Adactin Login Page
+     */
     @Given("I have navigated to Adactin Login Page")
     public void navigateToLogin() throws IOException {
         loadURL(frm.getPropertyValue("url"));
@@ -32,6 +35,6 @@ public class LoginPageSteps extends BaseClass {
        loginPage.setUsername(entityHelper.getCustomerDataById(id).getUsername());
        loginPage.setPassword(entityHelper.getCustomerDataById(id).getPassword());
        loginPage.clickLogin();
-
     }
+    
 }
