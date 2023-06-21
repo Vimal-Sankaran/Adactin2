@@ -34,7 +34,4 @@ public class LoginPage extends BaseClass {
         clickOnElement(login);
     }
 
-
-
-
 }
