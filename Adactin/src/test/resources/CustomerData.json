@@ -1,7 +1,13 @@
 [
-{
+  {
   "id": "InvalidDetails",
   "username": "stan",
   "password": "agda"
-}
+  },
+  {
+    "id": "ValidDetails",
+    "username": "Cardsteam",
+    "password": "Creditcards@2023",
+    "location": "Sydney"
+  }
 ]

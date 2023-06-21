@@ -68,7 +68,7 @@ public class BaseClass {
      */
     public static WebDriver driver;
     public static WebDriver setChromeBrowser() {
-        System.setProperty("webdriver.chrome.driver","E:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","F:\\Viji\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         return driver;
