@@ -13,6 +13,7 @@ public class SelectHotelPage extends BaseClass {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
+    
     @FindBy(id="radiobutton_0")
     private WebElement radioButton;
 
@@ -36,11 +37,13 @@ public class SelectHotelPage extends BaseClass {
 
     @FindBy(id="room_type_0")
     private WebElement roomType;
+    
     @FindBy(id="continue")
     private WebElement continueSearch;
 
     @FindBy(id="cancel")
     private WebElement cancelDetails;
+    
     public void selectHotelDetails()
     {clickOnElement(radioButton);
     clickOnElement(continueSearch);}
