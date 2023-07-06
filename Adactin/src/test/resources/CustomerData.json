@@ -7,7 +7,14 @@
   {
     "id": "ValidDetails",
     "username": "Cardsteam",
-    "password": "Creditcards@2023",
-    "location": "Sydney"
+    "password": "WQ00RN",
+    "location": "Sydney",
+    "hotelName": "Hotel Creek",
+    "roomType": "Standard",
+    "noOfRooms": "2 - Two",
+    "adults": "3 - Three",
+    "child": "1 - One",
+    "dateIn": "30/06/2023",
+    "dateOut": "02/07/2023"
   }
 ]
