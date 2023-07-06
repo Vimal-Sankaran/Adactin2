@@ -118,7 +118,7 @@ public class SearchHotelPageSteps extends BaseClass {
 
     /**
      * Selecting the number of adults value using the runtime value
-     * @param adult
+     * @param adult - number of adults
      */
     @Given("I select number of adults {string} from the drop down")
     public void selectAdult(String adult)
