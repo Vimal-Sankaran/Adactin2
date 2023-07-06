@@ -43,13 +43,13 @@ public class SearchHotelPage extends BaseClass {
     @FindBy(id="Reset")
     private WebElement reset;
 
-    public void setLocation(String city)
+      public void setLocation(String city)
     {selectDropDownByValue(location1,city);}
 
-    public void setHotels(String hotelType)
+   public void setHotels(String hotelType)
     {selectDropDownByText(hotels,hotelType);}
 
-    public void setRoomType(String room)
+     public void setRoomType(String room)
     {selectDropDownByText(roomType,room);}
 
     public void setRoomNum(String roomNo)
