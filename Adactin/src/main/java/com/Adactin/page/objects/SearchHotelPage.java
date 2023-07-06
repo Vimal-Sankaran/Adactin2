@@ -12,7 +12,7 @@ public class SearchHotelPage extends BaseClass {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
-    
+
     @FindBy(id="location")
     private WebElement location1;
 
@@ -45,10 +45,10 @@ public class SearchHotelPage extends BaseClass {
 
       public void setLocation(String city)
     {selectDropDownByValue(location1,city);}
-    
+
    public void setHotels(String hotelType)
     {selectDropDownByText(hotels,hotelType);}
-    
+
      public void setRoomType(String room)
     {selectDropDownByText(roomType,room);}
 
@@ -66,7 +66,7 @@ public class SearchHotelPage extends BaseClass {
 
     public void setDatePickOut(String dateOut)
     {sendValueToTextBox(datePickOut,dateOut);}
-    
+
     public void submitHotelDetails()
     {clickOnElement(submit);}
 
