@@ -41,8 +41,8 @@ public class SelectHotelPage extends BaseClass {
 
     @FindBy(id="cancel")
     private WebElement cancelDetails;
+
     public void selectHotelDetails()
     {clickOnElement(radioButton);
     clickOnElement(continueSearch);}
-
 }
