@@ -26,6 +26,32 @@ public class CustomerData {
     private String dateIn;
     @JsonProperty("dateOut")
     private String dateOut;
+
+    @JsonProperty("firstname")
+    private String firstname;
+
+    @JsonProperty("lastname")
+    private String lastname;
+
+    @JsonProperty("address")
+    private String address;
+
+    @JsonProperty("cardnum")
+    private String cardnum;
+
+
+    @JsonProperty("cardtype")
+    private String cardtype;
+
+    @JsonProperty("expmonth")
+    private String expmonth;
+
+    @JsonProperty("expyear")
+    private String expyear;
+
+    @JsonProperty("verification")
+    private String verification;
+
     public String getDateOut() {
         return dateOut;
     }
@@ -72,4 +98,69 @@ public class CustomerData {
     }
     public String getHotelName() { return hotelName;    }
     public void setHotelName(String hotelName) { this.hotelName = hotelName;    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getCardnum() {
+        return cardnum;
+    }
+
+    public String getCardtype() {
+        return cardtype;
+    }
+
+    public String getExpmonth() {
+        return expmonth;
+    }
+
+    public String getExpyear() {
+        return expyear;
+    }
+
+    public String getVerification() {
+        return verification;
+    }
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setCardnum(String cardnum) {
+        this.cardnum = cardnum;
+    }
+
+    public void setCardtype(String cardtype) {
+        this.cardtype = cardtype;
+    }
+
+    public void setExpmonth(String expmonth) {
+        this.expmonth = expmonth;
+    }
+
+    public void setExpyear(String expyear) {
+        this.expyear = expyear;
+    }
+
+    public void setVerification(String verification) {
+        this.verification = verification;
+    }
+
+
 }
