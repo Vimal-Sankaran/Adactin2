@@ -19,8 +19,8 @@ public class SelectHotelPageSteps extends BaseClass {
   public void selectHotelDetails(String id)
   {
       String temp;
-      selectHotelPage.assertTrue(selectHotelPage.getHotelName(),entityHelper.getCustomerDataById(id).getHotelName(),"HotelName from Select Hotel is Validated");
-      selectHotelPage.assertTrue(selectHotelPage.getLocation(),entityHelper.getCustomerDataById(id).getLocation(),"Location from Select Hotel is Validated");
+      Assert.assertTrue(selectHotelPage.getHotelName(),entityHelper.getCustomerDataById(id).getHotelName(),"HotelName from Select Hotel is Validated");
+      Assert.assertTrue(selectHotelPage.getLocation(),entityHelper.getCustomerDataById(id).getLocation(),"Location from Select Hotel is Validated");
       temp=entityHelper.getCustomerDataById(id).getNoOfRoom().substring(0,1);
       selectHotelPage.assertTrue(selectHotelPage.getRooms(),temp+ " Rooms","Number of Rooms from Select Hotel is Validated");
       selectHotelPage.assertTrue(selectHotelPage.getRoomtype(),entityHelper.getCustomerDataById(id).getRoomtype(),"RoomType from Select Hotel is Validated");
