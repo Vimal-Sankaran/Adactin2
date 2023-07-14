@@ -17,13 +17,15 @@ public class LoginPage extends BaseClass {
 
     @FindBy(id = "login")
     private WebElement login;
+
+    @FindBy(xpath = "//*[contains(text(),'Invalid Login')]")
+    private WebElement authError;
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
 
-    public void setUsername (String userName){
-        sendValueToTextBox(username,userName);
+    public void setUsername (String userName){sendValueToTextBox(username,userName);
     }
 
     public void setPassword (String passWord){
@@ -33,5 +35,7 @@ public class LoginPage extends BaseClass {
     public void clickLogin (){
         clickOnElement(login);
     }
+
+    public String getMessage() { return getElementText(authError);}
 
 }

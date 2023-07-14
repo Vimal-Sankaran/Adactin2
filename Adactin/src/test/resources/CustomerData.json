@@ -2,12 +2,28 @@
   {
   "id": "InvalidDetails",
   "username": "stan",
-  "password": "agda"
+  "password": "agda",
+    "errorMessage": "Invalid Login details or Your Password might have expired"
   },
   {
     "id": "ValidDetails",
     "username": "Cardsteam",
-    "password": "Creditcards@2023",
-    "location": "Sydney"
+    "password": "9W3O0R",
+    "location1": "Sydney",
+    "roomType": " ",
+    "arrivalDate": " ",
+    "departureDate": " ",
+    "totalRooms": " ",
+    "adultsRoom": " ",
+    "childRoom": " ",
+    "PricePerNight": " ",
+    "totalPrice": " ",
+    "gst": "",
+    "finalPrice": "",
+    "firstName": "",
+    "lastname": "",
+    "address": "",
+    "orderNumber": ""
+
   }
 ]

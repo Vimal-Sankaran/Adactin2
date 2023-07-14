@@ -16,6 +16,19 @@ public class CustomerData {
     @JsonProperty("location")
     private String location;
 
+    @JsonProperty("errorMessage")
+    private String errorMessage;
+
+
+
+        public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
+    }
+
     public String getLocation() {
         return location;
     }

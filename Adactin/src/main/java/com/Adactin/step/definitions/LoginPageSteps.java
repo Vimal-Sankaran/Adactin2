@@ -5,6 +5,7 @@ import com.Adactin.page.objects.LoginPage;
 import com.Adactin.utilities.BaseClass;
 import com.Adactin.utilities.FileReaderManager;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
@@ -35,6 +36,16 @@ public class LoginPageSteps extends BaseClass {
        loginPage.setUsername(entityHelper.getCustomerDataById(id).getUsername());
        loginPage.setPassword(entityHelper.getCustomerDataById(id).getPassword());
        loginPage.clickLogin();
+    }
+    @Given("I Enter username {string},password {string} and click on Login button")
+    public void loginSteps(String username, String password){
+        loginPage.setUsername(username);
+        loginPage.setPassword(password);
+        loginPage.clickLogin();
+    }
+    @Then("I validate the error message {string}")
+    public void validateErrorMessage(String errorMessage){
+        assertTrue(loginPage.getMessage(),errorMessage,"Invalid Login details or Your Password might have expired");
     }
     
 }
