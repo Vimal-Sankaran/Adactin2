@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
+
 public class SelectHotelPage extends BaseClass {
     public WebDriver driver;
 
@@ -38,6 +40,12 @@ public class SelectHotelPage extends BaseClass {
     @FindBy(id="room_type_0")
     private WebElement roomType;
 
+    @FindBy(id="price_night_0")
+    private WebElement price;
+
+    @FindBy(id="price_total_0")
+    private WebElement total;
+
     @FindBy(id="continue")
     private WebElement continueSearch;
 
@@ -47,4 +55,51 @@ public class SelectHotelPage extends BaseClass {
     public void selectHotelDetails()
     {clickOnElement(radioButton);
     clickOnElement(continueSearch);}
+
+    public String getHotelName()
+    {
+        return getTextBoxValue(hotelName);
+    }
+
+    public String getLocation()
+    {
+        return getTextBoxValue(location);
+    }
+
+    public String getRooms()
+    {
+        return getTextBoxValue(rooms);
+    }
+
+    public String getArrivalDate()
+    {
+        return getTextBoxValue(arrivalDate);
+    }
+
+    public String getDepartureDate()
+    {
+        return getTextBoxValue(depDate);
+    }
+
+    public String getNumofDays()
+    {
+        return getTextBoxValue(noDays);
+    }
+
+    public String getRoomtype()
+    {
+        return getTextBoxValue(roomType);
+    }
+
+    public String getPricePerDay()
+    {
+        return getTextBoxValue(price);
+    }
+
+    public String getTotalPrice()
+    {
+        return getTextBoxValue(total);
+    }
+
+
 }
