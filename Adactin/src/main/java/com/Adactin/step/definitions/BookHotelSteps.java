@@ -27,9 +27,9 @@ public class BookHotelSteps extends BaseClass {
     @Given("I am entering the details in BookHotelPage {string}")
     public void EnteringTheDetailsInBookHotelPage(String id) {
 
-        bookhotelpage.assertTrue(bookhotelpage.getHotelNameValue(),entityHelper.getCustomerDataById(id).getHotelName(),"HotelName from Select Hotel is Validated");
-        bookhotelpage.assertTrue(bookhotelpage.getLocationValue(),entityHelper.getCustomerDataById(id).getLocation(),"Location from Select Hotel is Validated");
-        bookhotelpage.assertTrue(bookhotelpage.getRoomTypeValue(),entityHelper.getCustomerDataById(id).getRoomtype(),"RoomType from Select Hotel is Validated");
+        Assert.assertTrue(bookhotelpage.getHotelNameValue(),entityHelper.getCustomerDataById(id).getHotelName(),"HotelName from Select Hotel is Validated");
+        Assert.assertTrue(bookhotelpage.getLocationValue(),entityHelper.getCustomerDataById(id).getLocation(),"Location from Select Hotel is Validated");
+        Assert.assertTrue(bookhotelpage.getRoomTypeValue(),entityHelper.getCustomerDataById(id).getRoomtype(),"RoomType from Select Hotel is Validated");
         bookhotelpage.setFirstNameText(entityHelper.getCustomerDataById(id).getFirstname());
         bookhotelpage.setLastNameText(entityHelper.getCustomerDataById(id).getLastname());
         bookhotelpage.setCustAddress(entityHelper.getCustomerDataById(id).getAddress());
