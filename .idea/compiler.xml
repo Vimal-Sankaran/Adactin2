@@ -10,8 +10,5 @@
         <module name="Adactin" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Adactin" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
